@@ -1,10 +1,10 @@
 extensions:
 - keyString: "ijm"
-outlineMenuArray:
+outlineMenu:
 - beginString: "^[\\t ]*(function)\\s*([^{]*)(?=\\{)"
 - beginString: "^[\\t ]*(macro)\\s*([^{]*)(?=\\{)"
   italic: true
-commandsArray:
+commands:
 - beginString: "abs"
 - beginString: "acos"
 - beginString: "Array.concat"
@@ -317,22 +317,22 @@ metadata:
   version: "2.0"
   author: "1024jp"
   license: "MIT Lisence"
-  lastModified: "2014-10-13"
+  lastModified: "2014-10-14"
   description: "Based on ImageJ 1.44 - 1.46."
   distributionURL: "https://github.com/1024jp/ImageJ-coteditor"
-charactersArray:
+characters:
 - beginString: "'"
   endString: "'"
-commentsArray: []
-valuesArray:
+comments: []
+values:
 - beginString: "false"
 - beginString: "NaN"
 - beginString: "true"
-numbersArray: []
-stringsArray:
+numbers: []
+strings:
 - beginString: "\""
   endString: "\""
-keywordsArray:
+keywords:
 - beginString: "do"
 - beginString: "else"
 - beginString: "for"
