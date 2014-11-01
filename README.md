@@ -4,7 +4,7 @@ ImageJ Macro syntax style for CotEditor
 
 [CotEditor][]'s syntax style file for the image processing program ImageJ macro language. This version is based on the official manual of ImageJ v1.46.
 
-[CotEditor]: http://coteditor.github.io/
+[CotEditor]: http://coteditor.com/
 
 
 Install
