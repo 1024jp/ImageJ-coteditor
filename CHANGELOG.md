@@ -2,6 +2,12 @@
 CHANGELOG
 ======================
 
+v2.0.1 (2014-11-17)
+----------------------
+- added some missing words.
+- add block comment.
+- add numbers definition.
+
 v2.0 (2014-10-14)
 ----------------------
 - migarated to YAML for CotEditor 2.0

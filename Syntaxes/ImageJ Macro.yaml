@@ -3,7 +3,7 @@ extensions:
 outlineMenu:
 - beginString: "^[\\t ]*(function)\\s*([^{]*)(?=\\{)"
 - beginString: "^[\\t ]*(macro)\\s*([^{]*)(?=\\{)"
-  italic: true
+  bold: true
 commands:
 - beginString: "abs"
 - beginString: "acos"
@@ -313,13 +313,6 @@ commands:
 - beginString: "updateResults"
 - beginString: "wait"
 - beginString: "waitForUser"
-metadata:
-  version: "2.0"
-  author: "1024jp"
-  license: "MIT Lisence"
-  lastModified: "2014-10-14"
-  description: "Based on ImageJ 1.44 - 1.46."
-  distributionURL: "https://github.com/1024jp/ImageJ-coteditor"
 characters:
 - beginString: "'"
   endString: "'"
@@ -327,8 +320,14 @@ comments: []
 values:
 - beginString: "false"
 - beginString: "NaN"
+- beginString: "PI"
 - beginString: "true"
-numbers: []
+numbers:
+- ignoreCase: true
+  beginString: "\\b0x[0-9a-f]+\\b"
+  regularExpression: true
+- beginString: "\\b\\d+(\\.\\d+)?\\b"
+  regularExpression: true
 strings:
 - beginString: "\""
   endString: "\""
@@ -340,6 +339,16 @@ keywords:
 - beginString: "if"
 - beginString: "macro"
 - beginString: "return"
+- beginString: "var"
 - beginString: "while"
 commentDelimiters:
   inlineDelimiter: "//"
+  beginDelimiter: "/*"
+  endDelimiter: "*/"
+metadata:
+  version: "2.0.1"
+  author: "1024jp"
+  license: "MIT Lisence"
+  lastModified: "2014-11-17"
+  description: "Based on ImageJ 1.44 - 1.46."
+  distributionURL: "https://github.com/1024jp/ImageJ-coteditor"
